@@ -1,0 +1,76 @@
+body {
+    font-family: 'Inter';
+    background-color: #E3E1EA; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+/*    overflow: hidden;  Убирает скроллинг */
+    width: 1080px; /* Фиксированная ширина */
+    height: 1920px; /* Фиксированная высота */
+}
+
+.registration-form {   
+    display: flex;
+/*    flex-direction: column;*/
+    justify-content: center; /* Центрация содержимого по вертикали */
+    align-items: center; /* Центрация содержимого по горизонтали */
+    padding: 30px; /* Внутренние отступы */
+/*    box-sizing: border-box;*/
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Пространство между полями */
+    width: 100%; /* Поля формы растягиваются на всю ширину */
+    max-width: 600px; /* Ограничение максимальной ширины */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #7D7A85;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.form-group input:focus { 
+    border-color: #007bff; 
+} 
+
+.error-message { 
+    color: red; 
+    font-size: 0.875em; 
+    margin-top: 5px; 
+} 
+
+button_next {
+/*    width: 100%;*/
+/*    width: 420px;*/
+/*
+    height: 150px;
+*/
+    padding: 10px 20px;
+    margin-left: auto;
+        margin-right: auto;
+
+    background-color: #F9F6FF;
+    color: #14141F;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    color: #F9F6FF;
+    font-size: 96px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
