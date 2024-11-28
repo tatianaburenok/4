@@ -110,4 +110,32 @@ h2 {
     margin-bottom: 30px; 
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    h2 {
+        font-size: 48px; /* Меньший размер заголовка на мобильных */
+    }
 
+    button {
+        font-size: 18px; /* Уменьшение размера шрифта кнопки */
+        padding: 10px 20px; /* Меньшие отступы */
+    }
+
+    .form-group input {
+        font-size: 14px; /* Уменьшение размера шрифта в полях ввода */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 36px; /* Ещё меньший на маленьких экранах */
+    }
+
+    button {
+        font-size: 16px; /* Ещё меньше */
+        padding: 8px 16px; /* Меньшие отступы */
+    }
+
+    .form-group input {
+        font-size: 12px; /* Ещё меньше для маленьких экранов */
+    }
+}
