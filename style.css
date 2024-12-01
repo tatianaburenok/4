@@ -45,7 +45,6 @@ table {
 
 /*-------ОЧИЩЕНИЕ СТАНДАРТНЫХ СТИЛЕЙ-------*/
 
-
 body {
     font-family: 'Inter';
     background-color: #E3E1EA; 
@@ -66,11 +65,11 @@ body {
 .form-group {
     margin: auto;
     margin-bottom: 20px; /* Пространство между полями */
-    max-width: 600px; /* Ограничение максимальной ширины */
+    width: 400px; /* Ограничение максимальной ширины */
 }
 
 .form-group input {
-    width: 600px;
+    width: 400px;
     padding: 20px;
     box-sizing: border-box;
     border: 1px solid #7D7A85;
@@ -110,32 +109,4 @@ h2 {
     margin-bottom: 30px; 
     font-weight: bold;
 }
-@media (max-width: 768px) {
-    h2 {
-        font-size: 48px; /* Меньший размер заголовка на мобильных */
-    }
 
-    button {
-        font-size: 18px; /* Уменьшение размера шрифта кнопки */
-        padding: 10px 20px; /* Меньшие отступы */
-    }
-
-    .form-group input {
-        font-size: 14px; /* Уменьшение размера шрифта в полях ввода */
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        font-size: 36px; /* Ещё меньший на маленьких экранах */
-    }
-
-    button {
-        font-size: 16px; /* Ещё меньше */
-        padding: 8px 16px; /* Меньшие отступы */
-    }
-
-    .form-group input {
-        font-size: 12px; /* Ещё меньше для маленьких экранов */
-    }
-}
