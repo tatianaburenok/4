@@ -96,6 +96,7 @@ body {
 } 
 
 button {
+    width: 100%; 
     padding: 10px 40px; 
     margin: auto;
     margin-top: 30px;  
