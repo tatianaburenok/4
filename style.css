@@ -53,33 +53,39 @@ body {
     align-items: center;
     height: 100vh; /* Устанавливаем высоту на 100% высоты окна, чтобы центрировать */
     margin: 0;
-/*    overflow: hidden;  Убирает скроллинг */
+    overflow: hidden;  /* Убирает скроллинг */
 }
 
 .registration-form {   
+    /* background-color: #4a4a4a;  */
+    padding: 120px 50px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    width: 100%;
+    max-width: 400px;
 }
 
 .form-group {
-    margin: auto;
-    margin-bottom: 20px; /* Пространство между полями */
-    width: 400px; /* Ограничение максимальной ширины */
+    /* margin: auto; */
+    /* margin-left: 30%;
+    margin-right: 30%; */
+    margin-bottom: 10px; /* Пространство между полями */
+    /* max-width: 600px; Ограничение максимальной ширины */
 }
 
 .form-group input {
-    width: 400px;
+    width: 100%; 
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid #7D7A85;
-    border-radius: 10px;
+    border: 2px solid #7D7A85;
+    border-radius: 15px;
     font-size: 16px;
 }
 
-.form-group input:focus { 
+/* .form-group input:focus { 
     border-color: #007bff; 
-} 
+}  */
 
 .error-message { 
     color: red; 
@@ -88,6 +94,8 @@ body {
 } 
 
 button {
+    /* width: 100%;  */
+    margin: auto;
     display: block; /* Обеспечивает корректный рендеринг */
     padding: 10px 40px;
     background-color: #F9F6FF;
@@ -95,16 +103,16 @@ button {
     font-size: 24px;
     text-align: center;
     border: none;
-    border-radius: 10px; 
+    border-radius: 15px; 
     cursor: pointer;
     box-sizing: border-box;
-    margin: auto;
+    margin-top: 30px;
 }
 
 h2 {
     justify-content: center;
     color: #F9F6FF;
-    font-size: 96px;
+    font-size: 35px;
     text-align: center;
     margin-bottom: 30px; 
     font-weight: bold;
