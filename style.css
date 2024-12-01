@@ -107,14 +107,13 @@ button {
     cursor: pointer;
     box-sizing: border-box; 
     background-color: #F9F6FF;
-
 }
 
 
 h2 {
     justify-content: center;
     color: #F9F6FF;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     margin-bottom: 30px; 
     font-weight: bold;
