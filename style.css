@@ -1,0 +1,121 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*-------ОЧИЩЕНИЕ СТАНДАРТНЫХ СТИЛЕЙ-------*/
+
+body {
+    font-family: 'Inter';
+    background-color: #E3E1EA; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Устанавливаем высоту на 100% высоты окна, чтобы центрировать */
+    margin: 0;
+    overflow: hidden;  /* Убирает скроллинг */
+}
+
+.registration-form {   
+    /* background-color: #4a4a4a;  */
+    padding: 120px 50px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    /* margin: auto; */
+    /* margin-left: 30%;
+    margin-right: 30%; */
+    margin-bottom: 10px; /* Пространство между полями */
+    /* max-width: 600px; Ограничение максимальной ширины */
+}
+
+.form-group input {
+    width: 100%; 
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #9e9ba7;
+    color: #9e9ba7;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+/* .form-group input:focus { 
+    border-color: #007bff; 
+}  */
+
+.error-message { 
+    color: red; 
+    font-size: 0.875em; 
+    margin-top: 5px; 
+} 
+
+button {
+    padding: 10px 40px; 
+    margin: auto;
+    margin-top: 30px;  
+    display: block; /* Обеспечивает корректный рендеринг */
+    color: #14141F;
+    border: none;
+    border-radius: 15px; 
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box; 
+    background-color: #F9F6FF;
+}
+
+
+h2 {
+    justify-content: center;
+    color: #F9F6FF;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px; 
+    font-weight: bold;
+}
+
