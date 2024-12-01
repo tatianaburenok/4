@@ -78,7 +78,8 @@ body {
     width: 100%; 
     padding: 20px;
     box-sizing: border-box;
-    border: 2px solid #7D7A85;
+    border: 2px solid #9e9ba7;
+    color: #9e9ba7;
     border-radius: 15px;
     font-size: 16px;
 }
@@ -94,25 +95,24 @@ body {
 } 
 
 button {
-    /* width: 100%;  */
+    padding: 10px 40px; 
     margin: auto;
+    margin-top: 30px;  
     display: block; /* Обеспечивает корректный рендеринг */
-    padding: 10px 40px;
     background-color: #F9F6FF;
     color: #14141F;
-    font-size: 24px;
-    text-align: center;
     border: none;
     border-radius: 15px; 
+    font-size: 24px;
+    text-align: center;
     cursor: pointer;
-    box-sizing: border-box;
-    margin-top: 30px;
+    /* box-sizing: border-box;  */
 }
 
 h2 {
     justify-content: center;
     color: #F9F6FF;
-    font-size: 35px;
+    font-size: 32px;
     text-align: center;
     margin-bottom: 30px; 
     font-weight: bold;
