@@ -95,26 +95,25 @@ body {
 } 
 
 button {
-    padding: 10px 40px; 
+    padding: 0.5em 3vw;  /* Относительные единицы */
     margin: auto;
-    margin-top: 30px;  
+    margin-top: 2rem;  /* Использование "rem" поможет с масштабированием */
     display: block; /* Обеспечивает корректный рендеринг */
     background-color: #F9F6FF;
     color: #14141F;
     border: none;
-    border-radius: 15px; 
-    font-size: 24px;
+    border-radius: 1rem; /* Используем относительные единицы для радиуса */
+    font-size: 1.6vw;    /* Размер шрифта зависит от ширины окна */
     text-align: center;
     cursor: pointer;
-    /* box-sizing: border-box;  */
+    box-sizing: border-box;
 }
 
 h2 {
-    justify-content: center;
     color: #F9F6FF;
-    font-size: 32px;
     text-align: center;
     margin-bottom: 30px; 
     font-weight: bold;
+    font-size: 2.3vw; /* Размер шрифта зависит от ширины окна */
 }
 
