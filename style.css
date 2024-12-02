@@ -47,7 +47,7 @@ table {
 
 body {
     font-family: 'Inter';
-    background-color: #E3E1EA; 
+    background-color: #ecedfe; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,26 +67,30 @@ body {
 }
 
 .form-group {
-    /* margin: auto; */
-    /* margin-left: 30%;
-    margin-right: 30%; */
     margin-bottom: 10px; /* Пространство между полями */
-    /* max-width: 600px; Ограничение максимальной ширины */
 }
 
 .form-group input {
+    background-color: #ffffff;
     width: 100%; 
     padding: 20px;
     box-sizing: border-box;
-    border: 2px solid #9e9ba7;
-    color: #9e9ba7;
+    border: 2px solid #9e9ba7; /* Изначально граница такой же, как текст */
+    color: #9e9ba7; /* Установим светлый цвет текста */
     border-radius: 15px;
     font-size: 16px;
+    margin-bottom: 10px; 
+    transition: border-color 0.3s, color 0.3s; /* Плавный переход для цвета границы и текста */
 }
 
-/* .form-group input:focus { 
-    border-color: #007bff; 
-}  */
+.form-group input:focus {
+    border-color: #444444; /* Граница красная при фокусе */
+    outline: none; /* Убираем стандартный обвод при фокусе */
+}
+
+.form-group input:valid {
+    color: #444444; /* Темный цвет текста при изменении */
+}
 
 .error-message { 
     color: red; 
@@ -95,24 +99,27 @@ body {
 } 
 
 button {
+    background-color: #ffffff;
     padding: 10px 40px; 
     margin: auto;
-    margin-top: 30px;  
     display: block; /* Обеспечивает корректный рендеринг */
-    color: #14141F;
+    color: #444444;
     border: none;
     border-radius: 15px; 
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
     cursor: pointer;
     box-sizing: border-box; 
-    background-color: #F9F6FF;
 }
 
+button:hover {
+    background-color: #4c00ce;
+    color: white;
+}
 
 h2 {
     justify-content: center;
-    color: #F9F6FF;
+    color: #444444;
     font-size: 30px;
     text-align: center;
     margin-bottom: 30px; 
