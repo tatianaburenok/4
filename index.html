@@ -35,10 +35,8 @@
         </form>
     </div>
 
-
-
     <script>
-        document.getElementById('registrationForm').addEventListener('next', function (event) {
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
             event.preventDefault();
 
             // Очистка предыдущих сообщений об ошибках
@@ -59,13 +57,9 @@
 
             // Функции валидации
             const isNotEmpty = value => {
-                if (value.length < 2) {
-                    return 'Поле должно содержать минимум 2 символа.';
-                }
-                if (!/\w+\s+\w+/.test(value)) {
-                    return 'Поле должно содержать минимум два слова.';
-                }
-                return '';
+                if (value.trim().length === 0) {
+                return 'Поле обязательно к заполнению';
+            }
             };
 
             // Проверка значений полей
