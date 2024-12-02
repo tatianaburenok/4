@@ -45,25 +45,25 @@ table {
 
 /*-------ОЧИЩЕНИЕ СТАНДАРТНЫХ СТИЛЕЙ-------*/
 
+
 body {
-    font-family: 'Inter';
-    background-color: #ecedfe; 
+    margin: 0;
+    height: 100vh; /* Устанавливаем высоту на 100% высоты окна, чтобы центрировать */
+    overflow: hidden; /* Убирает скроллинг */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Устанавливаем высоту на 100% высоты окна, чтобы центрировать */
-    margin: 0;
-    overflow: hidden;  /* Убирает скроллинг */
+    font-family: 'Inter';
+    background-color: #ecedfe;
 }
 
-.registration-form {   
-    /* background-color: #4a4a4a;  */
-    padding: 120px 50px;
+.registration-form {
     display: flex;
     flex-direction: column;
     box-sizing: border-box; 
     width: 100%;
     max-width: 400px;
+    padding: 120px 50px;
 }
 
 .form-group {
@@ -73,40 +73,40 @@ body {
 .form-group input {
     width: 100%; 
     padding: 20px;
-    box-sizing: border-box;
-    border: 2px solid #9e9ba7; /* Изначально граница такой же, как текст */
-    color: #9e9ba7; /* Установим светлый цвет текста */
+    margin-bottom: 10px; 
+    border: 2px solid #9e9ba7; 
     border-radius: 15px;
     font-size: 16px;
-    margin-bottom: 10px; 
+    color: #9e9ba7; 
+    box-sizing: border-box;
     transition: border-color 0.3s, color 0.3s; /* Плавный переход для цвета границы и текста */
 }
 
 .form-group input:focus {
-    border-color: #444444; /* Граница красная при фокусе */
+    border-color: #444444; 
     outline: none; /* Убираем стандартный обвод при фокусе */
 }
 
 .form-group input:valid {
-    color: #444444; /* Темный цвет текста при изменении */
+    color: #444444;
 }
 
 .error-message { 
+    margin-top: 5px; 
     color: red; 
     font-size: 0.875em; 
-    margin-top: 5px; 
 } 
 
 button {
-    background-color: #ffffff;
-    padding: 10px 40px; 
-    margin: auto;
     display: block; /* Обеспечивает корректный рендеринг */
-    color: #444444;
-    border: none;
-    border-radius: 15px; 
+    margin: auto;
+    padding: 10px 40px; 
     font-size: 22px;
     text-align: center;
+    color: #444444;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px; 
     cursor: pointer;
     box-sizing: border-box; 
 }
@@ -117,11 +117,10 @@ button:hover {
 }
 
 h2 {
-    justify-content: center;
+    margin-bottom: 30px; 
     color: #444444;
     font-size: 30px;
-    text-align: center;
-    margin-bottom: 30px; 
     font-weight: bold;
+    text-align: center;
+    justify-content: center;
 }
-
